@@ -32,9 +32,9 @@ try :
 except Exception as e:
     print(f"Error: {e}")'''
     
-obj1 = Type.objects.filter(name="Test Type2")
+'''obj1 = Type.objects.filter(name="Test Type2")
 print(obj1)
 obj2 = Type.objects.filter(name__contains="Test")
 print(obj2)
 obj2 = Type.objects.filter(name__icontains="test")
-print(obj2)
+print(obj2)'''

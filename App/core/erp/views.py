@@ -6,4 +6,4 @@ def myfirst_view(request):
     data = {
         'message': 'Hello, this is my first view in Django!'
     }
-    return JsonResponse(data)
+    return render(request, 'index.html')
