@@ -37,6 +37,7 @@ class Sale(models.Model):
         
 class Product(models.Model):
     product_id = models.AutoField(primary_key=True)
+    category_id = models.ForeignKey('Category', on_delete=models.CASCADE, null=True)
     name = models.CharField(max_length=100)
     description = models.TextField(blank=True, null=True)
     price = models.DecimalField(max_digits=10, decimal_places=2)
